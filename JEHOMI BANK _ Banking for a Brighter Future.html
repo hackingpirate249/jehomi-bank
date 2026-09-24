@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/Bluesky%20lab/Downloads/index.html#about-info -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JEHOMI BANK | Banking for a Brighter Future</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f7fafc;
+            color: #12345b;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            background: rgba(0, 35, 75, 0.65);
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .navbar {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            height: 85px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            min-width: 210px;
+        }
+
+        .logo-symbol {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00e887, #0077c8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .logo-text {
+            line-height: 0.9;
+        }
+
+        .logo-text strong {
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        .logo-text small {
+            font-size: 10px;
+            display: block;
+            margin-top: 7px;
+            letter-spacing: 0.5px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 27px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 32px 0 28px;
+            position: relative;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #00ed91;
+        }
+
+        nav a.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 19px;
+            height: 3px;
+            background: #00ed91;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .search {
+            color: white;
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 27px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-green {
+            background: #00d878;
+            color: white;
+        }
+
+        .btn-green:hover {
+            background: #00b963;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid #00d8d8;
+            color: white;
+        }
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 520px;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,30,65,0.82),
+                    rgba(0,50,90,0.40),
+                    rgba(0,30,65,0.35)
+                ),
+                url("nmb.webp") center center / cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            padding-top: 75px;
+        }
+
+        .hero-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 62% 38%;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .hero-content {
+            color: white;
+            padding: 35px 0;
+        }
+
+        .welcome {
+            color: #00ed91;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            line-height: 1.03;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .hero-description {
+            max-width: 570px;
+            font-size: 17px;
+            line-height: 1.5;
+            color: white;
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+        }
+
+        .hero-buttons .btn {
+            padding: 15px 24px;
+        }
+
+        /* LOGIN BOX */
+
+        .login-box {
+            background: rgba(0, 40, 80, 0.88);
+            border: 1px solid rgba(82,184,255,0.7);
+            border-radius: 9px;
+            padding: 25px;
+            width: 100%;
+            max-width: 390px;
+            margin-left: auto;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+        }
+
+        .login-box h2 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 8px;
+        }
+
+        .login-box p {
+            color: white;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        .input-box {
+            width: 100%;
+            height: 43px;
+            margin-bottom: 10px;
+            background: transparent;
+            border: 1px solid #6da1c5;
+            border-radius: 7px;
+            color: white;
+            padding: 0 14px;
+            outline: none;
+        }
+
+        .input-box::placeholder {
+            color: #d4e2ed;
+        }
+
+        .login-button {
+            width: 100%;
+            height: 43px;
+            background: #00d878;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        .login-links a {
+            color: #00ef91;
+            font-size: 12px;
+        }
+
+        /* =====================================================
+           QUICK SERVICES
+        ===================================================== */
+
+        .quick-services {
+            background: #003361;
+            color: white;
+        }
+
+        .quick-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .quick-item {
+            min-height: 95px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            border-right: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .quick-item:last-child {
+            border-right: none;
+        }
+
+        .quick-icon {
+            color: #00ef91;
+            font-size: 34px;
+        }
+
+        .quick-item h4 {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .quick-item p {
+            font-size: 11px;
+            color: #d2e3ef;
+        }
+
+        /* =====================================================
+           SERVICES
+        ===================================================== */
+
+        .services {
+            background: white;
+            padding: 65px 0;
+        }
+
+        .services-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            gap: 30px;
+        }
+
+        .section-label {
+            color: #00b96b;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .services-intro h2 {
+            color: #0a3564;
+            font-size: 29px;
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .services-intro p {
+            color: #557392;
+            font-size: 14px;
+            line-height: 1.7;
+            max-width: 420px;
+        }
+
+        .green-line {
+            width: 50px;
+            height: 3px;
+            background: #00c978;
+            margin: 25px 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .service-card {
+            border: 1px solid #d9e8f2;
+            border-radius: 7px;
+            padding: 20px;
+            min-height: 145px;
+            box-shadow: 0 3px 10px rgba(0,50,100,0.07);
+            transition: 0.3s;
+            background: white;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,70,120,0.15);
+        }
+
+        .service-icon {
+            color: #00bb70;
+            font-size: 29px;
+            margin-bottom: 7px;
+        }
+
+        .service-card h3 {
+            font-size: 14px;
+            color: #073668;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            font-size: 12px;
+            color: #587594;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
+
+        .learn {
+            color: #00ae6a;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* =====================================================
+           WHY CHOOSE US
+        ===================================================== */
+
+        .why-us {
+            min-height: 250px;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,74,58,0.94),
+                    rgba(0,80,75,0.70),
+                    rgba(0,38,76,0.55)
+                ),
+                url("nmb.webp") center / cover no-repeat;
+
+            color: white;
+            padding: 35px 0;
+        }
+
+        .why-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .why-us .section-label {
+            color: #00ee91;
+        }
+
+        .why-us h2 {
+            font-size: 29px;
+            margin-bottom: 20px;
+        }
+
+        .advantages {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .advantage {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .advantage-icon {
+            font-size: 31px;
+            color: #00ef91;
+        }
+
+        .advantage h4 {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        .advantage p {
+            font-size: 10px;
+            color: #e0f1ed;
+        }
+
+        /* =====================================================
+           EXTRA INFORMATION
+        ===================================================== */
+
+        .information {
+            padding: 60px 0;
+            background: #f7fafc;
+        }
+
+        .information-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .information h2 {
+            color: #063563;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .information-intro {
+            color: #607d98;
+            max-width: 650px;
+            margin: auto auto 30px;
+            line-height: 1.6;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 8px;
+            padding: 28px;
+            border: 1px solid #e0ebf2;
+            box-shadow: 0 4px 15px rgba(0,50,100,0.06);
+        }
+
+        .info-card span {
+            font-size: 35px;
+        }
+
+        .info-card h3 {
+            margin: 12px 0;
+            color: #063563;
+        }
+
+        .info-card p {
+            color: #66819a;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            background: #032e58;
+            color: white;
+        }
+
+        .footer-container {
+            width: 90%;
+            max-width: 1400px;
+            margin: auto;
+            padding: 42px 0 28px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1fr 1.3fr;
+            gap: 30px;
+        }
+
+        .footer-logo {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-column h3 {
+            font-size: 13px;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .footer-column a {
+            display: block;
+            color: #d1dfeb;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .footer-column a:hover {
+            color: #00ed91;
+        }
+
+        .footer-description {
+            color: #c5d7e5;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .social {
+            display: flex;
+            gap: 15px;
+            margin: 12px 0 22px;
+        }
+
+        .social a {
+            color: white;
+            font-size: 17px;
+        }
+
+        .app-buttons {
+            display: flex;
+            gap: 8px;
+        }
+
+        .app-button {
+            border: 1px solid #9bb6ca;
+            border-radius: 5px;
+            padding: 8px 10px;
+            color: white;
+            font-size: 10px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding: 17px 5%;
+            display: flex;
+            justify-content: space-between;
+            color: #d2dfeb;
+            font-size: 11px;
+        }
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 1000px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+
+            .login-box {
+                margin: 20px auto;
+            }
+
+            .quick-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quick-item {
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+
+            .services-container {
+                grid-template-columns: 1fr;
+            }
+
+            .service-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .advantages {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                height: 70px;
+            }
+
+            .logo-text strong {
+                font-size: 18px;
+            }
+
+            .logo-symbol {
+                width: 38px;
+                height: 38px;
+                font-size: 20px;
+            }
+
+            .nav-buttons .btn-outline {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 70px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .quick-container {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-item {
+                border-right: none;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .advantages {
+                grid-template-columns: 1fr;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .copyright {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
+
+    <div class="navbar">
+
+        <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#home" class="logo">
+
+            <div class="logo-symbol">
+                ◉
+            </div>
+
+            <div class="logo-text">
+
+                <strong>
+                    JEHOMI BANK
+                </strong>
+
+                <small>
+                    Banking for a Brighter Future
+                </small>
+
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#home" class="active">
+                Home
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#personal">
+                Personal Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#business">
+                Business Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#digital">
+                Digital Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#about">
+                About Us
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact">
+                Help &amp; Support
+            </a>
+
+        </nav>
+
+
+        <div class="nav-buttons">
+
+            <span class="search">
+                ⌕
+            </span>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#login" class="btn btn-green">
+                Login
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#open-account" class="btn btn-outline">
+                Open Account
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+
+        <div class="hero-content">
+
+            <div class="welcome">
+                Welcome to JEHOMI Bank
+            </div>
+
+            <h1>
+                Your Trusted<br>
+                Banking Partner
+            </h1>
+
+            <p class="hero-description">
+
+                We are committed to providing simple,
+                secure and innovative banking solutions
+                for a better tomorrow.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#open-account" class="btn btn-green">
+                    Open an Account &nbsp; →
+                </a>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#services" class="btn btn-outline">
+                    Explore Our Services
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- INTERNET BANKING -->
+
+        <div class="login-box" id="login">
+
+            <h2>
+                Internet Banking
+            </h2>
+
+            <p>
+                Access your account anytime, anywhere.
+            </p>
+
+            <form>
+
+                <input class="input-box" type="text" placeholder="♙  Username" required="">
+
+                <input class="input-box" type="password" placeholder="♙  Password" required="">
+
+                <button class="login-button" type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="login-links">
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#">
+                    Forgot Password?
+                </a>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#register">
+                    New User? Register Here
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK SERVICES
+========================================================= -->
+
+<section class="quick-services">
+
+    <div class="quick-container">
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                ◉
+            </div>
+
+            <div>
+
+                <h4>
+                    Check Account Balance
+                </h4>
+
+                <p>
+                    View your balance instantly
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                ↻
+            </div>
+
+            <div>
+
+                <h4>
+                    Transfer Money
+                </h4>
+
+                <p>
+                    Send money with ease
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                ▤
+            </div>
+
+            <div>
+
+                <h4>
+                    Pay Bills
+                </h4>
+
+                <p>
+                    Electricity, water &amp; more
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                ▯
+            </div>
+
+            <div>
+
+                <h4>
+                    Mobile Banking
+                </h4>
+
+                <p>
+                    Bank on the go
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="quick-item">
+
+            <div class="quick-icon">
+                ⌖
+            </div>
+
+            <div>
+
+                <h4>
+                    Locate Branch/ATM
+                </h4>
+
+                <p>
+                    Find a branch near you
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section class="services" id="services">
+
+    <div class="services-container">
+
+
+        <div class="services-intro">
+
+            <div class="section-label">
+                Our Services
+            </div>
+
+            <h2>
+                Banking Solutions for Everyone
+            </h2>
+
+            <p>
+
+                Whether you're an individual, a business,
+                or a corporate, JEHOMI Bank has the right
+                solutions to meet your financial needs.
+
+            </p>
+
+            <div class="green-line"></div>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#services" class="btn btn-green">
+                View All Services &nbsp; →
+            </a>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ♙
+                </div>
+
+                <h3>
+                    Personal Banking
+                </h3>
+
+                <p>
+                    Savings, current accounts,
+                    loans and more.
+                </p>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#personal" class="learn">
+                    Learn More &nbsp; →
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ▣
+                </div>
+
+                <h3>
+                    Business Banking
+                </h3>
+
+                <p>
+                    Grow your business with
+                    our tailored solutions.
+                </p>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#business" class="learn">
+                    Learn More &nbsp; →
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ▥
+                </div>
+
+                <h3>
+                    Corporate Banking
+                </h3>
+
+                <p>
+                    Strategic banking for
+                    large enterprises.
+                </p>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#business" class="learn">
+                    Learn More &nbsp; →
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ▯
+                </div>
+
+                <h3>
+                    Digital Banking
+                </h3>
+
+                <p>
+                    Bank anytime, anywhere
+                    with our digital platforms.
+                </p>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#digital" class="learn">
+                    Learn More &nbsp; →
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ▭
+                </div>
+
+                <h3>
+                    Cards
+                </h3>
+
+                <p>
+                    Debit, credit and prepaid
+                    cards for your convenience.
+                </p>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#cards" class="learn">
+                    Learn More &nbsp; →
+                </a>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    ↗
+                </div>
+
+                <h3>
+                    Loans &amp; Financing
+                </h3>
+
+                <p>
+                    Fuel your dreams with
+                    flexible financing options.
+                </p>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#loans" class="learn">
+                    Learn More &nbsp; →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY CHOOSE JEHOMI
+========================================================= -->
+
+<section class="why-us" id="about">
+
+    <div class="why-container">
+
+        <div class="section-label">
+            Why Choose JEHOMI Bank?
+        </div>
+
+        <h2>
+            Banking That Moves You Forward
+        </h2>
+
+
+        <div class="advantages">
+
+
+            <div class="advantage">
+
+                <div class="advantage-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h4>
+                        Secure &amp; Reliable
+                    </h4>
+
+                    <p>
+                        Your security is our priority.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="advantage">
+
+                <div class="advantage-icon">
+                    ⚡
+                </div>
+
+                <div>
+
+                    <h4>
+                        Fast &amp; Convenient
+                    </h4>
+
+                    <p>
+                        Banking made simple.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="advantage">
+
+                <div class="advantage-icon">
+                    ♧
+                </div>
+
+                <div>
+
+                    <h4>
+                        Customer Focused
+                    </h4>
+
+                    <p>
+                        We put you first.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="advantage">
+
+                <div class="advantage-icon">
+                    ♢
+                </div>
+
+                <div>
+
+                    <h4>
+                        Innovative Solutions
+                    </h4>
+
+                    <p>
+                        For a brighter future.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#about-info" class="btn btn-green">
+            Learn More About Us &nbsp; →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     PERSONAL / BUSINESS / DIGITAL INFORMATION
+========================================================= -->
+
+<section class="information" id="about-info">
+
+    <div class="information-container">
+
+        <h2>
+            Banking Made For You
+        </h2>
+
+        <p class="information-intro">
+
+            JEHOMI Bank provides convenient banking
+            solutions for individuals, businesses and
+            organizations.
+
+        </p>
+
+
+        <div class="info-grid">
+
+
+            <div class="info-card" id="personal">
+
+                <span>
+                    👤
+                </span>
+
+                <h3>
+                    Personal Banking
+                </h3>
+
+                <p>
+
+                    Manage your savings, payments,
+                    transfers and everyday banking
+                    with convenient JEHOMI solutions.
+
+                </p>
+
+                <br>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#open-account" class="learn">
+                    Open an Account →
+                </a>
+
+            </div>
+
+
+            <div class="info-card" id="business">
+
+                <span>
+                    💼
+                </span>
+
+                <h3>
+                    Business Banking
+                </h3>
+
+                <p>
+
+                    Get banking solutions designed
+                    to help businesses manage their
+                    finances and grow.
+
+                </p>
+
+                <br>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact" class="learn">
+                    Contact Us →
+                </a>
+
+            </div>
+
+
+            <div class="info-card" id="digital">
+
+                <span>
+                    📱
+                </span>
+
+                <h3>
+                    Digital Banking
+                </h3>
+
+                <p>
+
+                    Access your banking services
+                    wherever you are using JEHOMI
+                    digital banking channels.
+
+                </p>
+
+                <br>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#login" class="learn">
+                    Login Now →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CARDS / LOANS
+========================================================= -->
+
+<section class="information">
+
+    <div class="information-container">
+
+        <div class="info-grid">
+
+
+            <div class="info-card" id="cards">
+
+                <span>
+                    💳
+                </span>
+
+                <h3>
+                    JEHOMI Cards
+                </h3>
+
+                <p>
+
+                    Enjoy convenient card payments,
+                    ATM access and secure transactions.
+
+                </p>
+
+                <br>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact" class="learn">
+                    Learn More →
+                </a>
+
+            </div>
+
+
+            <div class="info-card" id="loans">
+
+                <span>
+                    📈
+                </span>
+
+                <h3>
+                    Loans &amp; Financing
+                </h3>
+
+                <p>
+
+                    Explore financing options for
+                    personal needs, homes, education
+                    and businesses.
+
+                </p>
+
+                <br>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact" class="learn">
+                    Apply Now →
+                </a>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    🏧
+                </span>
+
+                <h3>
+                    Branch &amp; ATM
+                </h3>
+
+                <p>
+
+                    Find convenient JEHOMI branches
+                    and ATM services near you.
+
+                </p>
+
+                <br>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact" class="learn">
+                    Find Location →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     OPEN ACCOUNT
+========================================================= -->
+
+<section class="information" id="open-account">
+
+    <div class="information-container">
+
+        <h2>
+            Open a JEHOMI Bank Account
+        </h2>
+
+        <p class="information-intro">
+            Start your banking journey with JEHOMI Bank.
+        </p>
+
+
+        <form action="file:///C:/Users/Bluesky%20lab/Downloads/index.html#" method="post" style="
+                max-width:700px;
+                margin:auto;
+                text-align:left;
+                background:white;
+                padding:30px;
+                border-radius:10px;
+                box-shadow:0 5px 20px rgba(0,0,0,0.08);
+            ">
+
+            <label>
+                Full Name
+            </label>
+
+            <input type="text" required="" style="
+                    width:100%;
+                    padding:13px;
+                    margin:8px 0 18px;
+                    border:1px solid #ccdce8;
+                    border-radius:5px;
+                ">
+
+
+            <label>
+                Phone Number
+            </label>
+
+            <input type="tel" placeholder="+255..." required="" style="
+                    width:100%;
+                    padding:13px;
+                    margin:8px 0 18px;
+                    border:1px solid #ccdce8;
+                    border-radius:5px;
+                ">
+
+
+            <label>
+                Email Address
+            </label>
+
+            <input type="email" required="" style="
+                    width:100%;
+                    padding:13px;
+                    margin:8px 0 18px;
+                    border:1px solid #ccdce8;
+                    border-radius:5px;
+                ">
+
+
+            <label>
+                Account Type
+            </label>
+
+            <select style="
+                    width:100%;
+                    padding:13px;
+                    margin:8px 0 18px;
+                    border:1px solid #ccdce8;
+                    border-radius:5px;
+                ">
+
+                <option>
+                    Savings Account
+                </option>
+
+                <option>
+                    Current Account
+                </option>
+
+                <option>
+                    Student Account
+                </option>
+
+                <option>
+                    Business Account
+                </option>
+
+            </select>
+
+
+            <button type="submit" class="btn btn-green">
+                Submit Application →
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section class="information" id="contact">
+
+    <div class="information-container">
+
+        <h2>
+            Contact JEHOMI Bank
+        </h2>
+
+        <p class="information-intro">
+            Our support team is ready to assist you.
+        </p>
+
+
+        <div class="info-grid">
+
+
+            <div class="info-card">
+
+                <span>
+                    ☎
+                </span>
+
+                <h3>
+                    Call Us
+                </h3>
+
+                <p>
+                    +255 700 000 000
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    ✉
+                </span>
+
+                <h3>
+                    Email Us
+                </h3>
+
+                <p>
+                    info@jehomibank.example
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>
+                    ⌖
+                </span>
+
+                <h3>
+                    Visit Us
+                </h3>
+
+                <p>
+                    123 Financial Avenue,
+                    Dar es Salaam, Tanzania
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-column">
+
+            <div class="footer-logo">
+                ◉ JEHOMI BANK
+            </div>
+
+            <p class="footer-description">
+
+                Banking for a Brighter Future.
+
+                <br><br>
+
+                Secure banking. Simple solutions.
+                Better future.
+
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#home">
+                Home
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#about">
+                About Us
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#personal">
+                Personal Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#business">
+                Business Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Products &amp; Services
+            </h3>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#personal">
+                Personal Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#business">
+                Business Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#digital">
+                Digital Banking
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#loans">
+                Loans &amp; Financing
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#cards">
+                Cards
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Support
+            </h3>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact">
+                Help Center
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact">
+                Branch Locator
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact">
+                ATM Locator
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact">
+                Security Tips
+            </a>
+
+            <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#contact">
+                Contact Us
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <div class="social">
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#">
+                    ●
+                </a>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#">
+                    X
+                </a>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#">
+                    in
+                </a>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#">
+                    ▶
+                </a>
+
+                <a href="file:///C:/Users/Bluesky%20lab/Downloads/index.html#">
+                    ◎
+                </a>
+
+            </div>
+
+
+            <h3>
+                Download Our Mobile App
+            </h3>
+
+
+            <div class="app-buttons">
+
+                <div class="app-button">
+                    ▶ Google Play
+                </div>
+
+                <div class="app-button">
+                     App Store
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <span>
+            © 2026 JEHOMI Bank Plc. All rights reserved.
+        </span>
+
+        <span>
+            Stronger Together for a Brighter Future
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+</body></html>
