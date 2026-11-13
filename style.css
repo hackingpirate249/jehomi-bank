@@ -1,0 +1,103 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #075b45;
+  color: white;
+  padding: 20px 5%;
+}
+
+.brand h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: #e5f4ed;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h2 {
+  color: #075b45;
+  font-size: 32px;
+}
+
+.button, button {
+  background: #087b58;
+  color: white;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 45px 8%;
+}
+
+section h2 {
+  color: #075b45;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f1f7f4;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.notice {
+  font-size: 13px;
+  color: #777;
+}
+
+footer {
+  background: #075b45;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
